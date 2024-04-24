@@ -1,3 +1,12 @@
+/*
+    This class provides functionality for generating and validating JSON Web Tokens (JWT).
+
+    This service class encapsulates the logic for JWT token generation and validation,
+    providing methods for extracting user information, checking token validity,
+    and managing token expiration.
+
+*/
+
 package com.yzengin.security.config;
 
 import io.jsonwebtoken.Claims;
