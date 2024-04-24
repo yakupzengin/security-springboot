@@ -40,3 +40,22 @@ This project provides an example of implementing JWT (JSON Web Token) authentica
   "email": "john@example.com",
   "password": "password"
 }
+```
+### Authentication
+- **URL:** /api/v1/auth/authenticate
+- **Method:** POST
+- **Request Body (Istek Govdesi):**
+```json
+{
+  "email": "john@example.com",
+  "password": "password"
+}
+```
+### Protected Resource
+- **URL:** /api/v1/protected
+- **Method:** GET
+- **Headers (Basliklar):** Authorization: Bearer <JWT_TOKEN>
+
+## References
+This project is based on the tutorial "Securing Your Spring Boot Applications with JSON Web Tokens (JWT)" by Ali Boukari. This tutorial provides a comprehensive guide to implementing JWT authentication in Spring Boot applications.
+
