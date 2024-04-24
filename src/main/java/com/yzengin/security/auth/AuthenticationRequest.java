@@ -1,3 +1,9 @@
+/*
+    This class represents the request model for user authentication.
+    It contains fields for user email and password.
+
+*/
+
 package com.yzengin.security.auth;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
