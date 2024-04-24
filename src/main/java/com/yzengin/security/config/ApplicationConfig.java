@@ -1,3 +1,20 @@
+/*
+    This class provides the configuration for the application, including user authentication and password encoding.
+
+    - @Configuration: Indicates that this class provides Spring application configuration.
+    - @RequiredArgsConstructor: Lombok annotation generating a constructor with required arguments.
+    - @Bean: Indicates that a method produces a bean to be managed by the Spring container.
+
+    - userDetailsService(): Bean method creating a UserDetailsService bean, which retrieves user details from the
+    database.
+    - authenticationProvider(): Bean method creating an AuthenticationProvider bean, which authenticates users
+    using UserDetails.
+    - authenticationManager(): Bean method creating an AuthenticationManager bean, which authenticates users
+    during the login process.
+    - passwordEncoder(): Bean method creating a PasswordEncoder bean, which encodes and verifies passwords securely.
+
+    Note: BCryptPasswordEncoder is used for password encoding, and DaoAuthenticationProvider is used for user authentication.
+*/
 package com.yzengin.security.config;
 
 import com.yzengin.security.user.UserRepository;
