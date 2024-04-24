@@ -1,6 +1,21 @@
-package com.yzengin.security.config;
+/*
+    This class implements a filter to authenticate users using JSON Web Tokens (JWT).
 
-import com.yzengin.security.user.User;
+    - JwtAuthenticationFilter: Extends OncePerRequestFilter to ensure a single execution per request.
+    - doFilterInternal(): Method overriding the core filter logic to extract and validate JWT tokens.
+
+    - jwtService: An instance of JwtService for JWT token extraction and validation.
+    - userDetailsService: An instance of UserDetailsService to load user details by username/email.
+
+    The filter checks the Authorization header of incoming requests for a JWT token.
+    If a valid token is found, it extracts the user email from the token using JwtService.
+    Then, it loads user details from the database using UserDetailsService.
+    If the token is valid and the user details are found, it creates an authentication token
+    using UsernamePasswordAuthenticationToken and updates the SecurityContextHolder with the authentication token.
+    The filter chain continues after authentication.
+
+*/
+package com.yzengin.security.config;
 import jakarta.annotation.Nonnull;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
