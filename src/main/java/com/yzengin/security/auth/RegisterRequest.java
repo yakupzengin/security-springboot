@@ -1,3 +1,8 @@
+/*
+    This class represents the request model for user registration.
+    It contains fields for the user's first name, last name, email, and password.
+
+ */
 package com.yzengin.security.auth;
 
 
