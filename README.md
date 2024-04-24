@@ -9,7 +9,6 @@ This project provides an example of implementing JWT (JSON Web Token) authentica
 - JWT token generation and validation
 - Role-based access control (RBAC)
 - Stateless authentication
-![image](https://github.com/yakupzengin/security-springboot/assets/118113891/036c7cf1-ebac-4bf1-9618-3e2df2c0ed64)
 
 ### Getting Started
 
@@ -59,4 +58,6 @@ This project provides an example of implementing JWT (JSON Web Token) authentica
 
 ## References
 This project is based on the tutorial "Securing Your Spring Boot Applications with JSON Web Tokens (JWT)" by Ali Boukari. This tutorial provides a comprehensive guide to implementing JWT authentication in Spring Boot applications.
+
+![image](https://github.com/yakupzengin/security-springboot/assets/118113891/036c7cf1-ebac-4bf1-9618-3e2df2c0ed64)
 
