@@ -1,5 +1,10 @@
-package com.yzengin.security.auth;
+/*
+    This class represents the controller responsible for handling authentication-related HTTP requests.
+    It defines endpoints for user registration and authentication.
 
+*/
+
+package com.yzengin.security.auth;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
